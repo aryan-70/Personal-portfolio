@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65024d8812.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times " onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Development</p>
+                <h1>Hi, I'm <span>Shambhu</span><br>Kumar</h1>
+
+            </div>
+        </div>
+     </div>
+
+ <!----------------About--------------------------->
+
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-02.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a full stack developer passionate about building complete, scalable, and user-focused web applications. With expertise in both front-end and back-end technologies, I develop responsive interfaces using HTML, CSS, JavaScript, and modern frameworks like React, and implement robust server-side logic using Node.js, Express, and databases such as MongoDB or MySQL. I focus on writing clean, maintainable code and delivering seamless user experiences—from initial wireframes to full deployment. Each project reflects a balance of performance, usability, and technical precision.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX </span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <!-- <li><span>App Development </span><br>Building Android apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018-2020</span><br>Teaching</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span> <br>B.Tech from JNTUH University</li>
+                            <li><span>2020</span><br>Intermediate from BSEB</li>
+                            <li><span>2016</span><br>SSC from BSEB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!------------------ my skills ------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-square-binary"></i>
+                    <h2>Programming Languages</h2>
+                   <div>
+                     <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                    <!-- <p>C <br>     C++ <br>      Java <br>  Python <br>JavaScript</p> -->
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web Development</h2>
+                     <div>
+                     <ul>
+                        <li>
+                        HTML
+                        </li>
+                        <li>CSS</li>
+                        <li>Redux</li>
+                        <li>React.Js</li>
+                        <li>JavaScript</li>
+                        <li>Express.Js</li>
+                        <li>Node.Js</li>
+                    </ul>
+                </div>
+                    <!-- <p></p> -->
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Database and Dev Tools</h2>
+                     <div>
+                     <ul>
+                        <li>MangoDB</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                    <!-- <p></p> -->
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------projects------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calculator.png">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>The basic calculator capable of performing standard arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                        <a href="https://aryan-70.github.io/CalculatorProject/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                                 <div class="work">
+                    <img src="images/AnalogClock.jpg">
+                     <div class="layer">
+                        <h3>AnalogClock App</h3>
+                        <p>Real time for all anywhere to access</p>
+                        <a href="https://aryan-70.github.io/AnalogWatch-Project/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/emailspam.png">
+                     <div class="layer">
+                        <h3>Email Spam Detection App</h3>
+                        <p>Built a spam detection system using supervised algorithms like Naive Bayes, SVM, and Logistic Regression. Preprocessed email data through text cleaning and TF-IDF vectorization.</p>
+                        <a href="https://github.com/aryan-70/Email-Spam-Detection-using-Machine-Learning-Algorithm"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/phish.jpg">
+                     <div class="layer">
+                        <h3>Phish Catcher App</h3>
+                        <p>Developed a web-based Phish Catcher application that detects phishing websites using machine learning algorithms.</p>
+                        <a href="https://github.com/aryan-70/Phish-catcher"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>                
+            </div>
+            <a href="https://github.com/aryan-70" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------------------------contact-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>er.shambhusah@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+918000262152</p>
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/--facebooklinkpast--"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://wa.me/+918000262152"><i class="fa-brands fa-whatsapp-square"></i></a>
+                        <a href="https://www.instagram.com/___.aryan______/?igsh=emRva25udWJrNHRr#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/shambhusah7"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Shambhu. Made with <i class="fa-solid fa-heart"></i> by Aryan</p>
+        </div>
+    </div>
+
+    
+
+        <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbycIyP-z7rAm1x4Mk-bubL5O2Q2Kyf5q7scsYRPq6wdpFQPXGnZsSuCaBTYBw3M6kFw/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(() => {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "There was an error submitting the form.";
+      });
+  });
+</script>
+
+
+
+</body>
+</html>
